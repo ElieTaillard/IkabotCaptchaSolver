@@ -5,7 +5,7 @@ import json
 
 def solveCaptcha(textImg, captchaImg):
 
-    TESSERACT_PATH = "C:/Users/soludev5/AppData/Local/Programs/Tesseract-OCR/tesseract.exe"
+    TESSERACT_PATH = "C:/Users/soludev5/AppData/Local/Programs/Tesseract-OCR/tesseract.exe" # <------ /!\ CHANGE THIS /!\
     COLLECTION_JSON_PATH = "img/collection.json"
     COLLECTION_FOLDER_PATH = "img/collection/"
     NUMBER_OF_IMAGE_IN_CAPTCHA = 4
