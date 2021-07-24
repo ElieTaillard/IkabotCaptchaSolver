@@ -34,12 +34,8 @@ sentence = data[:-3]
 
 print(sentence)
 
-# split string
-spl_string = sentence.split()
-# remove the first 2 words and the last 3 words (remove : "Drag the" and "onto the [...]")
-rm = spl_string[2:-3]
-# convert list to string
-captchaImgTitle = ' '.join([str(elem) for elem in rm])
+# format string
+captchaImgTitle = sentence.split('onto')[0].split('Drag the')[-1].strip()
 
 # print string
 print(captchaImgTitle)
@@ -49,7 +45,7 @@ print(captchaImgTitle)
 # Search for img in collection #
 ################################
 
-imgName = captchaImgTitle.lower() + ".png"
+imgName = captchaImgTitle.lower().replace(' ','_') + ".png"
 assert os.path.isfile(COLLECTION_FOLDER_PATH + imgName), "Image not found in collection"
 
 
