@@ -2,6 +2,7 @@ import pytesseract
 import cv2
 from PIL import Image
 import json
+import os
 
 def solveCaptcha(textImg, captchaImg):
 
@@ -38,22 +39,14 @@ def solveCaptcha(textImg, captchaImg):
     # print string
     print(captchaImgTitle)
 
-    ##########################
-    # Search for img in json #
-    ##########################
+    ################################
+    # Search for img in collection #
+    ################################
 
-    # Open json file
-    with open(COLLECTION_JSON_PATH) as jsonFile:
-        jsonData = json.load(jsonFile)
-        jsonFile.close()
 
-    imgName = None
+    imgName = captchaImgTitle.lower() + ".png"
+    assert os.path.isfile(COLLECTION_FOLDER_PATH + imgName), "Image not found in collection"
 
-    # for each img in the json
-    for imgValue in jsonData:
-        if imgValue["title"] == captchaImgTitle:
-            imgName = imgValue["name"]
-            break
 
     print(imgName)
 
