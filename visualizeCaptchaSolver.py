@@ -44,22 +44,13 @@ captchaImgTitle = ' '.join([str(elem) for elem in rm])
 print(captchaImgTitle)
 
 
-##########################
-# Search for img in json #
-##########################
+################################
+# Search for img in collection #
+################################
 
-# Open json file
-with open(COLLECTION_JSON_PATH) as jsonFile:
-    jsonData = json.load(jsonFile)
-    jsonFile.close()
+imgName = captchaImgTitle.lower() + ".png"
+assert os.path.isfile(COLLECTION_FOLDER_PATH + imgName), "Image not found in collection"
 
-imgName = None
-
-# for each img in the json
-for imgValue in jsonData:
-    if imgValue["title"] == captchaImgTitle:
-        imgName = imgValue["name"]
-        break
 
 print(imgName)
 
