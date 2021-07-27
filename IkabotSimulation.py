@@ -16,7 +16,7 @@ def saveImg(textImg, captchaImg, response):
 
     array = chopImg(pil_image)
 
-    path = os.path.join(COLLECTION_FOLDER_PATH, name + ".png")
+    path = os.path.join(COLLECTION_FOLDER_PATH, name.lower() + ".png")
 
     img = array[int(response)-1]
     img.save(path)
