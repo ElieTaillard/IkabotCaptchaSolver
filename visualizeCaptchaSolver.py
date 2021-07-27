@@ -7,11 +7,10 @@ import numpy as np
 import skimage.exposure
 
 TESSERACT_PATH = "C:/Users/soludev5/AppData/Local/Programs/Tesseract-OCR/tesseract.exe"
-COLLECTION_JSON_PATH = "img/collection.json"
 COLLECTION_FOLDER_PATH = "img/collection/"
 
-TEXT_IMAGE_PATH = "img/examples/txt1.png"
-CAPTCHA_IMAGE_PATH = "img/examples/img1.png"
+TEXT_IMAGE_PATH = "img/examples/txt2.png"
+CAPTCHA_IMAGE_PATH = "img/examples/img2.png"
 
 ##############
 # Read Text  #
