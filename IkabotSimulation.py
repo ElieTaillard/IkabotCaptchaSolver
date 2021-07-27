@@ -57,7 +57,6 @@ def main():
 
         if result == -1:
             print("Can't solve the captcha. Please solve it via Telegram")
-            solvedByTelegram = False
             while True:
                 sendToBot(textImg, captchaImg)
                 response = getUserResponse()
@@ -65,6 +64,8 @@ def main():
                     continue
                 solvedByTelegram = True
                 break
+        else:
+            solvedByTelegram = False
 
         captcha_sent = {}
         # captcha_sent = self.s.post('https://image-drop-challenge.gameforge.com/challenge/{}/en-GB'.format(challenge_id), json=data).json()
