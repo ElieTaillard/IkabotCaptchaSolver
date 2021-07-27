@@ -40,7 +40,7 @@ def getUserResponse():
 
 def main():
     global solvedByTelegram
-    print("The interactive captcha has been presented. Trying to solve it...")
+    print("The interactive captcha has been presented")
 
     while True:
         TEXT_IMAGE_EXAMPLE_PATH = "img/examples/txt2.png"  # would be an URL in the future

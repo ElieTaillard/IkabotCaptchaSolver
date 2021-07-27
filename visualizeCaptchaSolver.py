@@ -1,10 +1,7 @@
 import pytesseract
 import cv2
 from PIL import Image
-import json
 import os
-import numpy as np
-import skimage.exposure
 
 TESSERACT_PATH = "C:/Users/soludev5/AppData/Local/Programs/Tesseract-OCR/tesseract.exe"
 COLLECTION_FOLDER_PATH = "img/collection/"
