@@ -21,4 +21,11 @@ Login Captcha Solver for [Ikabot](https://github.com/physics-sp/ikabot)
 If you want to add icons in the collection, you have to add the `.png` file in the folder `\collection`.
 
 ## Screenshots
+**Visualizer :**
+
 ![Screenshot Captcha Solver](https://i.ibb.co/ByT6fp6/Captcha-Solver.png)
+
+**Simulation :**
+
+![Screenshot Captcha Solver](https://i.ibb.co/nC5kNWg/2021-07-27-09-07-05-Window.png)
+
