@@ -19,7 +19,7 @@ Login Captcha Solver for [Ikabot](https://github.com/physics-sp/ikabot)
 **4**. Set the tesseract path (`TESSERACT_PATH`) in the script
 ## Contribution
 All images have been listed in the collection at the time of this edit.</br>
-If you want to add icons in the collection, you have to add the `.png` file in the folder `\collection`.
+If you want to add icons in the collection, you have to add the `.png` file in the folder `collection`.
 
 ## Screenshots
 **Visualizer :**
