@@ -30,3 +30,5 @@ If you want to add icons in the collection, you have to add the `.png` file in t
 
 ![Screenshot Captcha Solver](https://i.ibb.co/nC5kNWg/2021-07-27-09-07-05-Window.png)
 
+## Acknowledgements
+Thanks to [@ikagod](https://github.com/ikagod) for his help and contribution to the repository
