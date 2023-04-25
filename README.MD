@@ -24,7 +24,7 @@ If you want to add icons in the collection, you have to add the `.png` file in t
 ## Screenshots
 **Visualizer :**
 
-![Screenshot Captcha Solver](https://i.ibb.co/ByT6fp6/Captcha-Solver.png)
+![unknown](https://user-images.githubusercontent.com/54487782/234429017-0c38876c-98a2-4217-b19d-66cbf354279a.png)
 
 **Simulation :**
 
